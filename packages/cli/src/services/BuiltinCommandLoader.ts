@@ -44,6 +44,7 @@ import { recapCommand } from '../ui/commands/recapCommand.js';
 import { restoreCommand } from '../ui/commands/restoreCommand.js';
 import { resumeCommand } from '../ui/commands/resumeCommand.js';
 import { settingsCommand } from '../ui/commands/settingsCommand.js';
+import { selfEvolveCommand } from '../ui/commands/selfEvolveCommand.js';
 import { skillsCommand } from '../ui/commands/skillsCommand.js';
 import { statsCommand } from '../ui/commands/statsCommand.js';
 import { summaryCommand } from '../ui/commands/summaryCommand.js';
@@ -122,6 +123,7 @@ export class BuiltinCommandLoader implements ICommandLoader {
       recapCommand,
       restoreCommand(this.config),
       resumeCommand,
+      selfEvolveCommand,
       skillsCommand,
       statsCommand,
       summaryCommand,
