@@ -25,5 +25,6 @@
     "exactOptionalPropertyTypes": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"]
+  // Keep test files excluded from compilation but allow running them via ts-jest directly
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts", "**/__mocks__/**"]
 }
